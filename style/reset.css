@@ -13,8 +13,12 @@
     src:url(../font/NanumSquareEB.ttf)
 }
 @font-face {
-    font-family: 'G마켓산스';
+    font-family: 'G마켓산스M';
     src:url(../font/GmarketSansTTFMedium.ttf)
+}
+@font-face {
+    font-family: 'G마켓산스B';
+    src:url(../font/GmarketSansTTFBold.ttf)
 }
 /* reset.css */
 html,body, /*구조태그*/
@@ -23,8 +27,8 @@ span,strong,em,q,sub,sup,del,s,a,img, /*inline*/
 div,header,nav,aside,main,footer,article,figure,figcaption,section, 
 table,thead,tbody,tfoot,tr,th,td,ul,ol,li,dl,dt,dd, /*묶어주는 태그*/
 form,fieldset,legend,input,select,option,button,label,textarea {
-    font-family: '나눔스퀘어';
-    margin:0; padding:0; line-height:1.0;
+    font-family: '나눔스퀘어R';
+    margin:0; padding:0; line-height:1.0; letter-spacing: -0.02rem;
     font-size:16px; font-style:normal; font-weight:normal;
     text-decoration:none;
 }

@@ -1,33 +1,162 @@
-main {}
-main .best {}
+main {position: relative; top:-100px;}
+main .best {
+    margin:0 0 0 150px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    padding-top: 200px;
+}
 main .best .contents {}
-main .best .contents p {}
-main .best .contents h2 {}
-main .best .contents h3 {}
-main .best .contents .content {}
-main .best .contents a {}
-main .best .contents a span {}
+main .best .contents .best_bg {
+    width: 80px; height: 20px;
+    background:url(../images/best_bg.png) no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+main .best .contents .best_bg p {
+    font-family: 'Damion', cursive;
+    font-size: 1.875rem;
+    position: relative; bottom: 10px; left: 10%;
+}
+main .best .contents h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5.5rem;
+    line-height: 110px;
+}
+main .best .contents h3 {
+    margin: 70px 0;
+    font-size: 1.5625rem;
+    font-family: '나눔스퀘어B';
+}
+main .best .contents .content {
+    font-size: 1.25rem;
+    line-height: 33px;
+    margin-bottom: 50px;
+}
+main .best .contents a {
+    background: #B80000;
+    color:#fff;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 50px;
+    
+}
+main .best .contents a span {
+    font-family: '나눔스퀘어EB';
+    margin-right: 10px;
+}
 main .best .contents a i {}
-main > .img {}
-main > .img p {}
-main > .img p img {}
-main > .img ul {}
-main > .img ul li {}
-main > .img ul li a {}
-main > .img ul li a img {}
-main .store {}
-main .store h2 {}
-main .store p {}
-main .store a {}
-main .store ul {}
-main .store ul li {}
-main .store ul li p {}
-main .store ul li p em {}
-main .bnr {}
-main .bnr .bnt_left {}
-main .bnr .bnt_right {}
-main .bnr .content {}
-main .bnr .content h3 {}
-main .bnr .content p {}
-main .bnr .img{}
-main .bnr .img img{}
+main .best .img {
+    margin-right: 150px;
+    display: flex; flex-flow: column nowrap;
+    align-items: center;
+    position: relative; top:-30px;
+}
+main .best .img .bg {
+    background: url(../images/img_bg.png) no-repeat;
+    background-size: cover;
+    width: 900px; height: 700px;
+    position: absolute; top:-200px; right: -350px;
+    z-index: 1;
+}
+main .best .img p {
+    margin-bottom: 50px;
+    width: 650px;
+    z-index: 10;
+}
+main .best .img p img {width: 100%;}
+main .best .img ul {display: flex; position: relative; left: 15px;}
+main .best .img ul li {
+    width: 80px; margin-right: 50px;
+    opacity: 0.5;
+}
+main .best .img ul .ative {opacity: 1;}
+main .best .img ul li:last-child {margin-right: 0;}
+main .best .img ul li a {}
+main .best .img ul li a img {width: 100%;}
+main .store {
+    background:#FAFAFA;
+    margin: auto 0;
+    text-align: center;
+    padding: 70px 0;
+    position: relative; top:100px;
+}
+main .store h2 {
+    font-size: 2.4375rem;
+    font-family: '나눔스퀘어EB';
+}
+main .store p {
+    font-size: 1.25rem;
+    margin: 40px 0;
+}
+main .store a {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-family: '나눔스퀘어EB';
+    padding:10px 25px;
+    background: #B80000;
+    border-radius: 50px;
+    color:#fff;
+    margin-bottom: 10px;
+}
+main .store ul {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 70%;
+}
+main .store ul li {
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+main .store ul li .store_img {width: 100px; margin-right: 40px;}
+main .store ul li .store_img img {width: 100%;}
+main .store ul li p {
+    width: 150px;
+    text-align: left;
+    font-family: '나눔스퀘어B';
+    line-height: 30px;
+}
+main .store ul li p em {
+    font-family: '나눔스퀘어EB';
+    font-size: 1.563rem;
+}
+main .bnr {
+    display: flex;
+    height: 390px;
+    color:#fff;
+    position: relative; top:100px;
+}
+main .bnr .bnr_left {
+    width: 50%;
+    background: #544A28;
+    padding:20px 50px 0 200px;
+    display: flex;
+    justify-content: space-between;
+}
+main .bnr .bnr_right {
+    width: 50%;
+    background:#424242;
+    padding:20px 200px 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+main .bnr .content {
+    position: relative; top:10px;
+}
+main .bnr .content h3 {
+    font-size: 2.2rem;
+    font-family: 'G마켓산스B';
+    line-height: 50px;
+    margin: 50px 0 30px;
+
+}
+main .bnr .content p {
+    font-size: 1.25rem;
+    line-height: 35px;
+}
+main .bnr .img {width: 300px; position: relative; top:40px;}
+main .bnr .img img {width: 100%;}

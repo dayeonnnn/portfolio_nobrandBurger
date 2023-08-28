@@ -1,26 +1,80 @@
 /* header, footer */
 header {
     background: #FABE00;
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
+    display: flex; flex-flow: column nowrap;
     align-items: center;
+    /* margin-bottom: 100px; */
 }
 header h1 {
     width: 250px;
     margin:70px 0;
 }
 header h1 a {}
-header h1 a img {
-    width: 100%;
+header h1 a img {width: 100%;}
+header > ul {
+    display: flex; flex-flow: row nowrap;
 }
-header ul {}
-header ul > li {}
-header ul > li > a {font-family: '나눔스퀘어EB';}
-header ul > li > ul {}
-header ul > li ul >li a {}
-footer {}
-footer ul {}
+header > ul > li {
+    margin-right: 100px;
+    position: relative;
+}
+header > ul > li:last-child {margin-right: 0;}
+header > ul > li > a {
+    font-family: '나눔스퀘어EB';
+    font-size: 1.25rem;
+    height: 40px;
+    display: block;
+}
+header ul > li >ul {
+    display: none;
+    width: 120px;
+    padding:20px 0 0 20px;
+    background: url(../images/sub_bg.png) no-repeat;
+    background-size: 90%;
+    border-top: 5px solid #000;
+}
+header ul > li > .menu {
+    background-position-y: -50px;
+    background-position-x: 50%;
+    position: absolute; top:40px; left: 50%;
+    transform: translateX(-50%);
+}
+header ul > li > .news {
+    background-position-y: -150px;
+    background-position-x: 50%;
+    position: absolute; top:40px; left: 50%;
+    transform: translateX(-50%);
+}
+header ul > li ul > li {
+    margin-bottom: 20px;
+}
+header ul > li ul > li a {
+    font-family: '나눔스퀘어B';
+}
+footer {
+    background-color: #FABE00;
+    padding: 70px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer ul {
+    display: flex;
+    margin-bottom: 40px;
+}
 footer ul li {}
+footer ul li::after {
+    content: '';
+    display: inline-block;
+    width: 1px; height: 13px;
+    background: #000;
+    margin:0 15px;
+}
+footer ul li:last-child::after {display: none;}
+footer ul li:nth-child(2) a {font-family: '나눔스퀘어EB';}
 footer ul li a {}
-footer address {}
+footer address {
+    line-height: 30px;
+}
+footer > a {width: 250px;}
+footer > a img {width: 100%;}
