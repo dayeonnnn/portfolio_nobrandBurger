@@ -1,0 +1,26 @@
+/* header, footer */
+header {
+    background: #FABE00;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+header h1 {
+    width: 250px;
+    margin:70px 0;
+}
+header h1 a {}
+header h1 a img {
+    width: 100%;
+}
+header ul {}
+header ul > li {}
+header ul > li > a {font-weight: 700;}
+header ul > li > ul {}
+header ul > li ul >li a {}
+footer {}
+footer ul {}
+footer ul li {}
+footer ul li a {}
+footer address {}
