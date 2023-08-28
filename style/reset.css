@@ -1,8 +1,16 @@
 * {box-sizing:border-box;}
 /*local or web(@import) 글꼴 작성 위치*/
 @font-face {
-    font-family: '나눔스퀘어';
+    font-family: '나눔스퀘어R';
     src:url(../font/NanumSquareR.ttf)
+}
+@font-face {
+    font-family: '나눔스퀘어B';
+    src:url(../font/NanumSquareB.ttf)
+}
+@font-face {
+    font-family: '나눔스퀘어EB';
+    src:url(../font/NanumSquareEB.ttf)
 }
 @font-face {
     font-family: 'G마켓산스';

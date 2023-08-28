@@ -16,7 +16,7 @@ header h1 a img {
 }
 header ul {}
 header ul > li {}
-header ul > li > a {font-weight: 700;}
+header ul > li > a {font-family: '나눔스퀘어EB';}
 header ul > li > ul {}
 header ul > li ul >li a {}
 footer {}
