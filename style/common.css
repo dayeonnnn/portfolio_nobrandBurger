@@ -13,6 +13,8 @@ header h1 a {}
 header h1 a img {width: 100%;}
 header > ul {
     display: flex; flex-flow: row nowrap;
+    position: relative;
+    z-index: 999;
 }
 header > ul > li {
     margin-right: 100px;
