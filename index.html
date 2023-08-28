@@ -21,7 +21,22 @@
 </head>
 <body>
     <header>
-        <h1><a href="#"><img src="./images/nobrandburger_logo_1.png" alt="Nobrand Burger"></a></h1>
+        <div class="logo">
+            <h1><a href="#"><img src="./images/nobrandburger_logo_1.png" alt="Nobrand Burger"></a></h1>
+            <a href="#" class="m_nav">
+                <span></span><span></span><span></span>
+            </a>
+        </div>
+        <div class="m_nav_open showHide">
+            <ul>
+                <li><a href="#">브랜드스토리</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">매장</a></li>
+                <li><a href="#">뉴스&이벤트</a></li>
+                <li><a href="#">가맹안내</a></li>
+                <li><a href="#">고객지원</a></li>
+            </ul>
+        </div>
         <ul>
             <li><a href="#">브랜드스토리</a></li>
             <li>
@@ -45,6 +60,7 @@
             <li><a href="#">가맹안내</a></li>
             <li><a href="#">고객지원</a></li>
         </ul>
+        <a href="#" class="top">top</a>
     </header>
     <main>
         <section class="best" style="overflow-x: hidden;">
@@ -61,7 +77,7 @@
                 <p><img src="./images/5_double_cheese.png" alt=""></p>
                 <div class="bg"></div>
                 <ul>
-                    <li class="ative"><a href="#"><img src="./images/5_double_cheese.png" alt=""></a></li>
+                    <li class="active"><a href="#"><img src="./images/5_double_cheese.png" alt=""></a></li>
                     <li><a href="#"><img src="./images/4_quatromac.png" alt=""></a></li>
                     <li><a href="#"><img src="./images/2_chipotlehot.png" alt=""></a></li>
                     <li><a href="#"><img src="./images/3_toomuch.png" alt=""></a></li>
@@ -100,20 +116,20 @@
             </ul>
         </section>
         <section class="bnr">
-            <div class="bnr_left">
+            <a href="#" class="bnr_left">
                 <div class="content">
                     <h3>노브랜드 APP<br>이용방법</h3>
-                    <p>새로워진 노브랜드앱을<br>이용하는 방법을<br>소개합니다.</p>
+                    <p>새로워진 노브랜드앱을<br>이용하는 방법을 소개합니다.</p>
                 </div>
-                <div class="img"><img src="./images/bnr_img1.png" alt=""></div>
-            </div>
-            <div class="bnr_right">
+                <div class="img left"><img src="./images/bnr_img1.png" alt=""></div>
+            </a>
+            <a href="#" class="bnr_right">
                 <div class="content">
                     <h3>Delivery<br>이용방법</h3>
-                    <p>노브랜드 딜리버리<br>서비스로 편리하게<br>주문해보세요.</p>
+                    <p>노브랜드 딜리버리<br>서비스로 편리하게 주문해보세요.</p>
                 </div>
-                <div class="img"><img src="./images/bnr_img2.png" alt=""></div>
-            </div>
+                <div class="img right"><img src="./images/bnr_img2.png" alt=""></div>
+            </a>
         </section>
     </main>
     <footer>
@@ -131,5 +147,7 @@
         </div>
         <a href="#"><img src="./images/nobrandburger_logo_1.png" alt=""></a>
     </footer>
+    <script src="./script/common.js"></script>
+    <script src="./script/index.js"></script>
 </body>
 </html>

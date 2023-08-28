@@ -1,3 +1,117 @@
-@media screen and (max-width:1920px) {
-    main {}
+@media screen and (max-width:1500px) {
+    main .bnr .bnr_left {padding:20px 50px 0 100px;}
+    main .bnr .bnr_right {padding:20px 100px 0 50px;}
+}
+@media screen and (max-width:1440px) {
+    main .best .img .bg {display: none;}
+    main .best .img p {width: 500px; margin:30px 0 -30px;}
+    /* main .best .contents h2 {font-size: 4.2rem; line-height: 80px;} */
+    main .best .img ul {z-index: 999;}
+}
+@media screen and (max-width:1300px) {
+    main .bnr .content h3 {
+        font-size: 1.5rem; line-height: 40px; 
+        position: relative; top:-20px;
+    }
+    main .bnr .content p {
+        font-size: 0.8rem; line-height: 30px;
+        position: relative; top:-10px;
+    }
+    main .bnr .img img {width: 200px;}
+    main .bnr {height: 300px;}
+}
+@media screen and (max-width:1250px) {
+    main .store ul {width: 800px; position: relative; left:50px;}
+}
+@media screen and (max-width:1150px) {
+    main .best {display: flex; flex-flow: column nowrap;}
+    main .best .contents h2 {font-size: 4.5rem; line-height: 80px;}
+    main .best .contents a {margin-bottom: 30px;}
+}
+@media screen and (max-width:1024px) {
+    
+}
+@media screen and (max-width:1000px) {
+    main .bnr .content p {display: none;}
+    header > ul > li > a {font-size: 1rem;}
+    header > ul > li {margin-right: 50px;}
+    main .best {margin-left: 50px;}
+    footer {
+        display: flex; flex-flow: column nowrap;text-align: center;
+        padding: 50px;
+    }
+    footer a {margin-top: 50px;}
+    footer .left {display: flex; flex-flow: column nowrap; align-items: center;}
+    footer address {font-size: 0.8rem;}
+}
+
+@media screen and (max-width:900px) {
+    main .bnr .bnr_left, main .bnr .bnr_right {
+        display: flex; flex-flow: column nowrap;
+    }
+    main .bnr .img {position: relative; top:-50px; right:-150px;}
+    main .bnr .img img {width: 150px;}
+    main .bnr .content h3 {margin: 20px 0 30px;}
+}
+@media screen and (max-width:800px) {
+    main .store ul {width: 400px; position: relative; left:50%; transform: translateX(-50%); margin: 0;}
+    main .store ul li  {margin: 0;}
+    main .bnr {display: flex; flex-flow: column nowrap;}
+    main .bnr .bnr_left {
+        width: 100%;
+    }
+    main .bnr .left {position: absolute; top:0; right:100px;}
+    main .bnr .bnr_right {width: 100%; position: relative; padding-left: 100px;}
+    main .bnr .right {position: absolute; top:0; right:100px;}
+    main .bnr .content h3 {position: relative; top:-10px}
+    main .best .img p {width: 300px; height: 300px;}
+    main .best .img ul li a img {width: 80%;}
+    main .best .img ul li {margin-right: 10px;}
+}
+@media screen and (max-width:650px) {
+    main .best .contents h2 {font-size: 3rem; line-height: 60px;}
+    main .best .contents h3 {font-size: 1.25rem; margin: 40px 0;}
+    main .best .contents .content {font-size: 0.8rem; line-height: 20px;}
+    main .best .contents a span,main .best .contents a i {font-size: 0.8rem;}
+    main .best .img ul li {width: 50px;}
+    main .best .img {width: 300px;}
+    /* 햄버거메뉴 */
+    header .m_nav {display: block;}
+    header > ul {display: none;}
+    header .logo {width: 90%; display: flex; align-items: center; justify-content: space-between;}
+}
+@media screen and (max-width:500px) {
+    header .logo h1 {width: 200px;}
+    main .bnr .content h3 {font-size: 1.2rem; line-height: 30px; margin-right: 10px;}
+    main .bnr .img img {width: 100px; position: relative; top:15px;}
+    main .bnr .bnr_left, main .bnr .bnr_right {padding:0 50px;}
+    main .bnr .bnr_left, main .bnr .bnr_right {
+        display: flex; flex-flow: row nowrap;
+        margin: 0 auto;
+    }
+    main .bnr .left, main .bnr .right {position: absolute; right: 50px; top:-10px;}
+    footer {position: relative; top:20px;}
+    footer ul li a {font-size: 0.8rem;}
+    main {position: relative; top:0px;}
+    main .best {padding-top:50px;}
+    footer ul li::after {position: relative; top:2px;}
+}
+@media screen and (max-width:400px) {
+    main .best .contents .content {display: none;}
+    main .best .contents h2 {font-size: 2.2rem; line-height: 50px;}
+    main .store h2 {font-size: 1.5rem;}
+    main .store p {font-size: 1rem;}
+}
+@media screen and (max-width:360px) {
+    footer ul {display: flex; flex-flow: column nowrap;}
+    footer ul li:last-child:after {display: inline-block;}
+    footer ul li:nth-child(2) {margin:10px 0;}
+    footer ul li::before {
+        content: '';
+        position: relative; top:2px;
+        display: inline-block;
+        width: 1px; height: 13px;
+        background: #000;
+        margin:0 15px;
+    }
 }

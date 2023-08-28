@@ -1,9 +1,17 @@
 /* header, footer */
+.top {
+    display: flex; flex-flow: column nowrap;
+    justify-content: center; align-items: center;
+    width: 50px; height: 50px;
+    border-radius: 50px;
+    background-color: aqua;
+    position: fixed; bottom:50px; right: 50px;
+    z-index: 999;
+}
 header {
     background: #FABE00;
     display: flex; flex-flow: column nowrap;
     align-items: center;
-    /* margin-bottom: 100px; */
 }
 header h1 {
     width: 250px;
@@ -27,10 +35,10 @@ header > ul > li > a {
     height: 40px;
     display: block;
 }
-header ul > li >ul {
+header ul > li > ul {
     display: none;
     width: 120px;
-    padding:20px 0 0 20px;
+    padding:15px 0 0 20px;
     background: url(../images/sub_bg.png) no-repeat;
     background-size: 90%;
     border-top: 5px solid #000;
@@ -42,7 +50,7 @@ header ul > li > .menu {
     transform: translateX(-50%);
 }
 header ul > li > .news {
-    background-position-y: -150px;
+    background-position-y: -160px;
     background-position-x: 50%;
     position: absolute; top:40px; left: 50%;
     transform: translateX(-50%);
@@ -52,6 +60,30 @@ header ul > li ul > li {
 }
 header ul > li ul > li a {
     font-family: '나눔스퀘어B';
+}
+/* 햄버거메뉴 */
+header .m_nav {
+    display: none;
+    z-index: 998;
+}
+header .m_nav span {
+    display: block;
+    width: 30px; height: 5px;
+    background: #000;
+    border-radius: 10px;
+}
+header .m_nav span:nth-child(2) {margin: 4px 0;}
+header .showHide {display:none;}
+header .m_nav_open {
+    background: #000;
+    position: absolute; top:130px; right: 25px;
+    z-index: 992;
+}
+header .m_nav_open a {
+    font-family: '나눔스퀘어B';
+    padding: 15px 20px;
+    display: block;
+    color:#fff;
 }
 footer {
     background-color: #FABE00;
