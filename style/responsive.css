@@ -21,7 +21,6 @@
     main .bnr {height: 300px;}
 }
 @media screen and (max-width:1250px) {
-
     main .store ul {width: 800px; position: relative; left:50px;}
 }
 @media screen and (max-width:1150px) {
@@ -29,9 +28,6 @@
     main .best {display: flex; flex-flow: column nowrap;}
     main .best .contents h2 {font-size: 4.5rem; line-height: 80px;}
     main .best .contents a {margin-bottom: 30px;}
-}
-@media screen and (max-width:1024px) {
-    
 }
 @media screen and (max-width:1000px) {
     main .bnr .content p {display: none;}
@@ -56,6 +52,7 @@
     main .bnr .content h3 {margin: 20px 0 30px;}
 }
 @media screen and (max-width:800px) {
+    #topBtn {    position: fixed; bottom:20px; right: 20px;}
     main .store ul {width: 600px; position: relative; left:50%; transform: translateX(-50%); margin: 0;}
     main .store ul li  {margin: 0;}
     main .bnr {display: flex; flex-flow: column nowrap;}
