@@ -6,7 +6,7 @@ const content = document.querySelector('.best .contents .content')
 burger_sub[0].addEventListener('click',function(e){
     e.preventDefault()
     burger.src = './images/5_double_cheese.png'
-    name.innerHTML = 'Double Cheese Bacon Signature'
+    name.innerHTML = 'Double Cheese Signature'
     name_kr.innerHTML = '더블치즈 시그니처'
     content.innerHTML = '더블치즈가 스모크한 풍미와 고소함이 더해진<br>아메리칸 클래식 버거'
 })
