@@ -34,12 +34,16 @@ main .best .contents .content {
     line-height: 33px;
     margin-bottom: 50px;
 }
-main .best .contents a {
+main .best .contents a:hover {
     background: #B80000;
+}
+main .best .contents a {
+    background: #000;
     color:#fff;
     padding: 10px 20px;
     display: inline-block;
     border-radius: 50px;
+    transition: all 0.2s;
 }
 main .best .contents a span {
     font-family: '나눔스퀘어EB';
@@ -94,11 +98,13 @@ main .store a {
     font-size: 1.25rem;
     font-family: '나눔스퀘어EB';
     padding:10px 25px;
-    background: #B80000;
+    background: #000;
+    transition: all 0.2s;
     border-radius: 50px;
     color:#fff;
     margin-bottom: 10px;
 }
+main .store a:hover {background: #B80000;}
 main .store ul {
     margin: 0 auto;
     display: flex;
@@ -130,7 +136,8 @@ main .bnr {
     position: relative; top:100px;
 }
 main .bnr > a {}
-main .bnr > a:hover img {transition: all 0.5s; transform: translateX(-10%);}
+main .bnr > a .img img {transition: all 0.5s;}
+main .bnr > a:hover img {transform: translateX(-10%);}
 main .bnr .bnr_left {
     width: 50%;
     background: #544A28;

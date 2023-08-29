@@ -54,7 +54,7 @@
     main .bnr .content h3 {margin: 20px 0 30px;}
 }
 @media screen and (max-width:800px) {
-    main .store ul {width: 400px; position: relative; left:50%; transform: translateX(-50%); margin: 0;}
+    main .store ul {width: 600px; position: relative; left:50%; transform: translateX(-50%); margin: 0;}
     main .store ul li  {margin: 0;}
     main .bnr {display: flex; flex-flow: column nowrap;}
     main .bnr .bnr_left {
@@ -75,6 +75,12 @@
     main .best .contents a span,main .best .contents a i {font-size: 0.8rem;}
     main .best .img ul li {width: 50px;}
     main .best .img {width: 300px;}
+    main .store ul {width: 400px;}
+    main .store ul li .store_img {width: 60px; margin-right: 20px;}
+    main .store ul li p,main .store ul li p em {font-size: 1rem; line-height: 25px;}
+    main .store ul li {height: 150px;}
+    main .store ul li:nth-child(2n+1) {margin-right: 20px;}
+    main .store ul li p {width: 100px;}
     /* 햄버거메뉴 */
     header .m_nav {display: block;}
     header > ul {display: none;}
@@ -101,6 +107,9 @@
     main .best .contents h2 {font-size: 2.2rem; line-height: 50px;}
     main .store h2 {font-size: 1.5rem;}
     main .store p {font-size: 1rem;}
+    main .store ul {width: 300px;}
+    main .store ul li {height: 120px;}
+    main .store a {margin-bottom: 40px;}
 }
 @media screen and (max-width:360px) {
     footer ul {display: flex; flex-flow: column nowrap;}
