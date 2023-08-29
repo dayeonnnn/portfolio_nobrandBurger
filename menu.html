@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노브랜드버거</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/nobrandburger_logo_3.png" type="image/x-icon">
+    <link rel="icon" href="./images/nobrandburger_logo_3.png" type="image/x-icon">
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/menu.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet" href="./style/menu_responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="#"><img src="./images/nobrandburger_logo_1.png" alt="Nobrand Burger"></a></h1>
+            <a href="#" class="m_nav">
+                <span></span><span></span><span></span>
+            </a>
+        </div>
+        <div class="m_nav_open showHide">
+            <ul>
+                <li><a href="#">브랜드스토리</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">매장</a></li>
+                <li><a href="#">뉴스&이벤트</a></li>
+                <li><a href="#">가맹안내</a></li>
+                <li><a href="#">고객지원</a></li>
+            </ul>
+        </div>
+        <ul>
+            <li><a href="#">브랜드스토리</a></li>
+            <li>
+                <a href="#">메뉴</a>
+                <ul class="menu">
+                    <li><a href="#">Burger</a></li>
+                    <li><a href="#">Set</a></li>
+                    <li><a href="#">Salad</a></li>
+                    <li><a href="#">Side</a></li>
+                    <li><a href="#">Beverage</a></li>
+                </ul>
+            </li>
+            <li><a href="#">매장</a></li>
+            <li>
+                <a href="#">뉴스&이벤트</a>
+                <ul class="news">
+                    <li><a href="#">New’s</a></li>
+                    <li><a href="#">Event</a></li>
+                </ul>
+            </li>
+            <li><a href="#">가맹안내</a></li>
+            <li><a href="#">고객지원</a></li>
+        </ul>
+        <button type="button" id="topBtn"></button>
+    </header>
+    <main>
+        <ul class="top_menu">
+            <li><button type="button">Burger</button></li>
+            <li><button type="button">Set</button></li>
+            <li><button type="button">Salad</button></li>
+            <li><button type="button">Side</button></li>
+            <li><button type="button">Beverage</button></li>
+        </ul>
+        <!-- right menu -->
+        <ul class="right_menu">
+            <li class="active"><button type="button">Burger</button></li>
+            <li><button type="button">Set</button></li>
+            <li><button type="button">Salad</button></li>
+            <li><button type="button">Side</button></li>
+            <li><button type="button">Beverage</button></li>
+        </ul>
+        <section class="burger">
+            <div class="title">
+                <h2>Burger</h2>
+                <p>상기 메뉴는 매장에 따라 일부 상이할 수 있습니다.</p>
+            </div>
+            <ul>
+                <li><!-- 1 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/burger_1.png" alt=""></p>
+                        <p class="en">Pepperoni Pizza Chicken</p>
+                        <p class="ko">페퍼로니피자 치킨</p>
+                    </a>
+                </li>
+                <li><!-- 2 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/burger_2.png" alt=""></p>
+                        <p class="en">Chipotle Hot Chicken</p>
+                        <p class="ko">치폴레 핫 치킨</p>
+                    </a>
+                </li>
+                <li><!-- 3 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/burger_3.png" alt=""></p>
+                        <p class="en">Too Much Bacon</p>
+                        <p class="ko">투머치 베이컨킨</p>
+                    </a>
+                </li>
+                <li><!-- 4 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/burger_4.png" alt=""></p>
+                        <p class="en">Quatro Mac&Cheese</p>
+                        <p class="ko">콰트로 맥앤치즈</p>
+                    </a>
+                </li>
+                <li><!-- 5 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/burger_5.png" alt=""></p>
+                        <p class="en">Double Cheese Bacon Signature</p>
+                        <p class="ko">더블치즈 베이컨 시그니처</p>
+                    </a>
+                </li>
+                <li><!-- 6 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/burger_6.png" alt=""></p>
+                        <p class="en">Garlic & Garlic</p>
+                        <p class="ko">갈릭앤갈릭</p>
+                    </a>
+                </li>
+                <li><!-- 7 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/burger_7.png" alt=""></p>
+                        <p class="en">Coleslaw Chicken</p>
+                        <p class="ko">코울슬로 치킨</p>
+                    </a>
+                </li>
+                <li><!-- 8 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/burger_8.png" alt=""></p>
+                        <p class="en">NBB Original</p>
+                        <p class="ko">NBB 오리지널</p>
+                    </a>
+                </li>
+                <li><!-- 9 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/burger_9.png" alt=""></p>
+                        <p class="en">NBB Amazing</p>
+                        <p class="ko">NBB 어메이징</p>
+                    </a>
+                </li>
+                <li><!-- 10 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/burger_10.png" alt=""></p>
+                        <p class="en">NBB Signature</p>
+                        <p class="ko">NBB 시그니처</p>
+                    </a>
+                </li>
+                <li><!-- 11 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/burger_11.png" alt=""></p>
+                        <p class="en">Smoky Salsa</p>
+                        <p class="ko">스모키살사</p>
+                    </a>
+                </li>
+                <li><!-- 12 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/burger_12.png" alt=""></p>
+                        <p class="en">Meatmania</p>
+                        <p class="ko">미트 마니아</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="set">
+            <div class="title">
+                <h2>Set</h2>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/set_1.png" alt=""></p>
+                        <p class="en">Defense Derby Pack</p>
+                        <p class="ko">디펜스 더비팩</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/set_2.png" alt=""></p>
+                        <p class="en">Signature Party Pack</p>
+                        <p class="ko">시그니처 파티팩</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/set_3.png" alt=""></p>
+                        <p class="en">Signature Together Pack</p>
+                        <p class="ko">시그니처 투게더팩</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="img"><img src=# alt=""></p>
+                        <p class="en"></p>
+                        <p class="ko"></p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="salad">
+            <div class="title">
+                <h2>Salad</h2>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/salad_1.png" alt=""></p>
+                        <p class="en">Shanghai Pork Salad</p>
+                        <p class="ko">상하이포크샐러드</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/salad_1.png" alt=""></p>
+                        <p class="en">Chicken Caesar Salad</p>
+                        <p class="ko">치킨시저샐러드</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/salad_1.png" alt=""></p>
+                        <p class="en">Green Salad</p>
+                        <p class="ko">그린샐러드</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="img"><img src=# alt=""></p>
+                        <p class="en"></p>
+                        <p class="ko"></p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="side">
+            <div class="title">
+                <h2>Side</h2>
+            </div>
+            <ul>
+                <li><!-- 1 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/side_1.png" alt=""></p>
+                        <p class="en">Crispy Shanghai Pork</p>
+                        <p class="ko">크리스피 상하이포크</p>
+                    </a>
+                </li>
+                <li><!-- 2 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/side_2.png" alt=""></p>
+                        <p class="en">Crunchy Squid</p>
+                        <p class="ko">크런치 오징어</p>
+                    </a>
+                </li>
+                <li><!-- 3 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/side_3.png" alt=""></p>
+                        <p class="en">Crunchy Wing</p>
+                        <p class="ko">크런치 윙</p>
+                    </a>
+                </li>
+                <li><!-- 4 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/side_4.png" alt=""></p>
+                        <p class="en">Sugar Butter Fries</p>
+                        <p class="ko">슈가버터 프라이</p>
+                    </a>
+                </li>
+                <li><!-- 5 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/side_5.png" alt=""></p>
+                        <p class="en">Injeolmi Cheese Ball</p>
+                        <p class="ko">인절미 치즈볼</p>
+                    </a>
+                </li>
+                <li><!-- 6 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/side_6.png" alt=""></p>
+                        <p class="en">Chicken Nugget</p>
+                        <p class="ko">NBB 치킨너겟</p>
+                    </a>
+                </li>
+                <li><!-- 7 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/side_7.png" alt=""></p>
+                        <p class="en">Onion Doughnut</p>
+                        <p class="ko">어니언 도넛</p>
+                    </a>
+                </li>
+                <li><!-- 8 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/side_8.png" alt=""></p>
+                        <p class="en">French Fries</p>
+                        <p class="ko">감자튀김</p>
+                    </a>
+                </li>
+                <li><!-- none -->
+                    <a href="#">
+                        <p class="img"><img src="#" alt=""></p>
+                        <p class="en"></p>
+                        <p class="ko"></p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="beverage">
+            <div class="title">
+                <h2>Beverage</h2>
+            </div>
+            <ul>
+                <li><!-- 1 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/beverage_1.png" alt=""></p>
+                        <p class="en">Brand Cola/Cider</p>
+                        <p class="ko">브랜드 콜라/사이다</p>
+                    </a>
+                </li>
+                <li><!-- 2 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/beverage_2.png" alt=""></p>
+                        <p class="en">Brand Cola/Cider zero</p>
+                        <p class="ko">브랜드 콜라/사이다 제로</p>
+                    </a>
+                </li>
+                <li><!-- 3 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/beverage_3.png" alt=""></p>
+                        <p class="en">Soda</p>
+                        <p class="ko">탄산음료</p>
+                    </a>
+                </li>
+                <li><!-- 4 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/beverage_4.png" alt=""></p>
+                        <p class="en">Green Tangerine & Lime Ade</p>
+                        <p class="ko">청귤라임에이드</p>
+                    </a>
+                </li>
+                <li><!-- 5 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/beverage_5.png" alt=""></p>
+                        <p class="en">Hallabong & Passion Fruit Ade</p>
+                        <p class="ko">한라봉패션후르츠에이드</p>
+                    </a>
+                </li>
+                <li><!-- 6 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/beverage_1.png" alt=""></p>
+                        <p class="en">Orange Juice</p>
+                        <p class="ko">오렌지주스</p>
+                    </a>
+                </li>
+                <li><!-- 7 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/beverage_1.png" alt=""></p>
+                        <p class="en">Americano</p>
+                        <p class="ko">아메리카노</p>
+                    </a>
+                </li>
+                <li><!-- 8 -->
+                    <a href="#">
+                        <p class="img"><img src="./images/menu/beverage_1.png" alt=""></p>
+                        <p class="en">Mineral Water</p>
+                        <p class="ko">생수</p>
+                    </a>
+                </li>
+                <li><!-- none -->
+                    <a href="#">
+                        <p class="img"><img src="#" alt=""></p>
+                        <p class="en"></p>
+                        <p class="ko"></p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="left">
+            <ul>
+                <li><a href="#">법적 고지</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">고객지원</a></li>
+            </ul>
+            <address>
+                서울시 성동구 성수일로 56 백영성수센터 (주)신세계푸드TEL 02-3397-6000<br>
+                FAX 02-3397-6199 | 사업자등록번호 215-81-47377<br>
+                Copyright &copy; 2015 SHINSEGAE FOOD Inc. ALL RIGHTS RESERVED
+            </address>
+        </div>
+        <a href="#"><img src="./images/nobrandburger_logo_1.png" alt=""></a>
+    </footer>
+    <script src="./script/common.js"></script>
+    <script src="./script/menu.js"></script>
+</body>
+</html>

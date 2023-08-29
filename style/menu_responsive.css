@@ -1,0 +1,43 @@
+@media screen and (max-width:1200px){
+    main {width: 800px;}
+    main .set ul li:last-child,main .salad ul li:last-child {display: none;}
+    main .side ul li:last-child,main .beverage ul li:last-child {display: block;}
+    main .side ul li:last-child a .img img,main .beverage ul li:last-child a .img img {border:none}
+}
+@media screen and (max-width:1200px){
+    main {width: 530px;}
+    main .top_menu li button {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width:550px) {
+    main {width: 410px;}
+    main .title {display: flex; flex-flow: column nowrap; margin-bottom: 30px;}
+    main .title h2 {font-size: 1.2rem; margin:0 0 20px;}
+    main .title p {font-size: 0.8rem;}
+    main section ul li a .img {width: 200px; height: 120px;}
+    main section ul li a .en {width: 200px;}
+    main section {margin-top: 50px;}
+    main section:last-child {margin-bottom: 50px;}
+    main .side ul li:last-child,main .beverage ul li:last-child {display: none;}
+    main .right_menu li {margin-bottom: 82px;}
+    main .right_menu li button {font-size: 0.8rem;}
+}
+@media screen and (max-width:450px) {
+    main {width: 285px;}
+    main .top_menu li button {
+        font-size: 0.8rem;
+        padding: 0 10px;
+    }
+    main section ul li {margin-bottom: 20px;}
+    main section ul li a .img {width: 140px; height: 90px;}
+    main section ul li a .en {
+        width: 140px;
+        margin: 10px 0;
+        font-size: 0.8rem; line-height: 18px;
+    }
+    main section ul li a .ko {
+        font-size: 0.8rem;
+    }
+}

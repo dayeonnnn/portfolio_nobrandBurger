@@ -1,0 +1,67 @@
+main {
+    width: 1140px; margin: 0 auto;
+}
+main .top_menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+main .top_menu li {
+    border-left: 1px solid #3a3a3a;
+}
+main .top_menu li:last-child {border-right: 1px solid #3a3a3a;}
+main .top_menu li button {
+    font-size: 1.25rem;
+    background:none;
+    font-family: '나눔스퀘어EB';
+    padding: 0 30px;
+    color:#3a3a3a;
+}
+main .top_menu li button:hover {color:#000;}
+main .right_menu {
+    position: fixed; right:-50px; bottom: 100px;
+}
+main .right_menu li {
+    background: #FABE00;
+    transform: rotate(90deg);
+    margin-bottom: 94px;
+    border-radius: 0 0 20px 10px;
+}
+main .right_menu li button {
+    padding: 10px 50px 10px 10px;
+    background:none;
+    font-family: '나눔스퀘어EB';
+}
+main .right_menu .active {background: #000;}
+main .right_menu .active button {color:#fff}
+main section {margin-top: 100px;}
+main section:last-child {margin-bottom: 100px;}
+main .title {
+    display: flex; align-items: center;
+    margin-bottom: 50px;
+}
+main .title h2 {
+    font-size: 1.875rem;
+    font-family: 'G마켓산스B';
+    margin-right: 30px;
+}
+main .title p {}
+main section ul {
+    display: flex; flex-flow: row wrap; justify-content: space-between;
+}
+main section ul li {text-align: center; margin-bottom: 40px;}
+main section ul li a {}
+main section ul li a .img {
+    width: 260px; height: 150px;
+    background: #fff;
+}
+main section ul li a .img img {
+    width: 100%;
+    border: 1px solid #aaa;
+}
+main section ul li a .en {
+    font-family: 'Poppins', sans-serif;
+    margin: 15px 0 10px;
+}
+main section ul li a .ko {}
+main .side ul li:last-child,main .beverage ul li:last-child {display: none;}
