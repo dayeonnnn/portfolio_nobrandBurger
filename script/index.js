@@ -7,8 +7,8 @@ burger_sub[0].addEventListener('click',function(e){
     e.preventDefault()
     burger.src = './images/5_double_cheese.png'
     name.innerHTML = 'Double Cheese Bacon Signature'
-    name_kr.innerHTML = '더블치즈 베이컨 시그니처'
-    content.innerHTML = '베이컨과 더블치즈가 만나 스모크한 풍미와 고소함이 더해진<br>아메리칸 클래식 버거'
+    name_kr.innerHTML = '더블치즈 시그니처'
+    content.innerHTML = '더블치즈가 스모크한 풍미와 고소함이 더해진<br>아메리칸 클래식 버거'
 })
 burger_sub[1].addEventListener('click',function(e){
     e.preventDefault()
