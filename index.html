@@ -20,48 +20,7 @@
     <link rel="stylesheet" href="./style/responsive.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1><a href="./index.html"><img src="./images/nobrandburger_logo_1.png" alt="Nobrand Burger"></a></h1>
-            <a href="#" class="m_nav">
-                <span></span><span></span><span></span>
-            </a>
-        </div>
-        <div class="m_nav_open showHide">
-            <ul>
-                <li><a href="#">브랜드스토리</a></li>
-                <li><a href="./menu.html">메뉴</a></li>
-                <li><a href="#">매장</a></li>
-                <li><a href="#">뉴스&이벤트</a></li>
-                <li><a href="#">가맹안내</a></li>
-                <li><a href="#">고객지원</a></li>
-            </ul>
-        </div>
-        <ul>
-            <li><a href="#">브랜드스토리</a></li>
-            <li>
-                <a href="./menu.html">메뉴</a>
-                <ul class="menu">
-                    <li><a href="#">Burger</a></li>
-                    <li><a href="#">Set</a></li>
-                    <li><a href="#">Salad</a></li>
-                    <li><a href="#">Side</a></li>
-                    <li><a href="#">Beverage</a></li>
-                </ul>
-            </li>
-            <li><a href="#">매장</a></li>
-            <li>
-                <a href="#">뉴스&이벤트</a>
-                <ul class="news">
-                    <li><a href="#">New’s</a></li>
-                    <li><a href="#">Event</a></li>
-                </ul>
-            </li>
-            <li><a href="#">가맹안내</a></li>
-            <li><a href="#">고객지원</a></li>
-        </ul>
-        <button type="button" id="topBtn"></button>
-    </header>
+    <?php include('./header.php') ?>
     <main>
         <section class="best" style="overflow-x: hidden;">
             <div class="contents">
@@ -71,7 +30,7 @@
                 <h2>Double Cheese<br> Signature</h2>
                 <h3>더블치즈 시그니처</h3>
                 <p class="content">더블치즈가 스모크한 풍미와 고소함이 더해진<br>아메리칸 클래식 버거</p>
-                <a href="#"><span>더 보러 가기</span><i class="fa-solid fa-chevron-right"></i></a>
+                <a href="./menu.html"><span>더 보러 가기</span><i class="fa-solid fa-chevron-right"></i></a>
             </div>
             <div class="img">
                 <p><img src="./images/5_double_cheese.png" alt=""></p>
@@ -87,7 +46,7 @@
         <section class="store">
             <h2>매장 찾기</h2>
             <p>고객님 주변에 있는 노브랜드를 검색해 보세요!</p>
-            <a href="#">매장찾기</a>
+            <a href="./store.html">매장찾기</a>
             <ul>
                 <li>
                     <p class="store_img"><img src="./images/store_1.png" alt=""></p>
@@ -132,21 +91,7 @@
             </a>
         </section>
     </main>
-    <footer>
-        <div class="left">
-            <ul>
-                <li><a href="#">법적 고지</a></li>
-                <li><a href="#">개인정보처리방침</a></li>
-                <li><a href="#">고객지원</a></li>
-            </ul>
-            <address>
-                서울시 성동구 성수일로 56 백영성수센터 (주)신세계푸드TEL 02-3397-6000<br>
-                FAX 02-3397-6199 | 사업자등록번호 215-81-47377<br>
-                Copyright &copy; 2015 SHINSEGAE FOOD Inc. ALL RIGHTS RESERVED
-            </address>
-        </div>
-        <a href="./index.html"><img src="./images/nobrandburger_logo_1.png" alt=""></a>
-    </footer>
+    <?php include('./footer.php') ?>
     <script src="./script/common.js"></script>
     <script src="./script/index.js"></script>
 </body>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/nobrandburger_logo_3.png" type="image/x-icon">
+    <link rel="icon" href="./images/nobrandburger_logo_3.png" type="image/x-icon">
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/store.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+</head>
+<body>
+    <?php include('./header.php') ?>
+    <main>
+        <h2>매장</h2>
+        <p><img src="./images/store.jpg" alt=""></p>
+        <div class="store">
+            <h3>매장 정보</h3>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend class="skip">매장</legend>
+                    <select name="지역" id="area">
+                        <option value="area1">전체</option>
+                        <option value="area1">서울</option>
+                        <option value="area1">인천</option>
+                        <option value="area1">대전</option>
+                        <option value="area1">대구</option>
+                        <option value="area1">부산</option>
+                        <option value="area1">울산</option>
+                        <option value="area1">광주</option>
+                        <option value="area1">경기</option>
+                        <option value="area1">충북</option>
+                        <option value="area1">충남</option>
+                        <option value="area1">경북</option>
+                        <option value="area1">경남</option>
+                        <option value="area1">전북</option>
+                        <option value="area1">전남</option>
+                        <option value="area1">세종</option>
+                    </select>
+                    <select name="지역_list" id="area_list">
+                        <option value="area1">가산디지털단지점</option>
+                        <option value="area1">거여역점</option>
+                        <option value="area1">경북도청점</option>
+                        <option value="area1">경산사동점</option>
+                        <option value="area1">경산영남대역점</option>
+                        <option value="area1">경산정평역점</option>
+                        <option value="area1">경산하양점</option>
+                        <option value="area1">경주용황점</option>
+                        <option value="area1">경희대점</option>
+                        <option value="area1">고덕역점</option>
+                        <option value="area1">고려대점</option>
+                        <option value="area1">고속터미널점</option>
+                    </select>
+                </fieldset>
+            </form>
+            <div class="map">
+                <div id="map"><!-- 지도삽입위치 --></div>
+                <div class="map_right">
+                    <h3>가산디지털단지점</h3>
+                    <p>
+                        주소 : 서울특별시 금천구 벚꽃로 286(가산동)<br>
+                        전화번호 : 02-837-0160<br>
+                        영업시간 : 오전 10시~오후 10시
+                    </p>
+                    <p><a href="https://map.naver.com/p/search/%EA%B8%88%EC%B2%9C%EA%B5%AC%20%EA%B0%80%EC%82%B0%EB%8F%99%2060-15/address/14124682.9307112,4506280.3004882,%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B8%88%EC%B2%9C%EA%B5%AC%20%EA%B0%80%EC%82%B0%EB%8F%99%2060-15,jibun?c=18.00,0,0,0,dh&isCorrectAnswer=true">지도 상세보기</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <?php include('./footer.php') ?>
+    <script src="./script/common.js"></script>
+    <script 
+    type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d892061c97b33004cd758ddf658d5a1b">
+    </script>
+    <script>
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(37.4800146,126.8839306), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        var markerPosition  = new kakao.maps.LatLng(37.4800146,126.8839306); 
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+    </script>
+</body>
+</html>

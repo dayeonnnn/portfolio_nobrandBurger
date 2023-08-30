@@ -23,6 +23,15 @@
     main .side ul li:last-child,main .beverage ul li:last-child {display: none;}
     main .right_menu li {margin-bottom: 82px;}
     main .right_menu li button {font-size: 0.8rem;}
+    main .click { width: 300px; height: 500px;}
+    main .click .img {width: 300px; height: 160px;}
+    main .click h3 {font-size: 1rem;}
+    main .click h2 {font-size: 1.5rem; margin-bottom: 20px;}
+    main .click .content {font-size: 1rem; width: 200px; margin-bottom: 20px;}
+    .click_bg {height: 600px; position: absolute; top: 450px;}
+}
+@media screen and (max-width:500px) {
+    main .click_all {position: absolute; top:260px;}
 }
 @media screen and (max-width:450px) {
     main {width: 285px;}

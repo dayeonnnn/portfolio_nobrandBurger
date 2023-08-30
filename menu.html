@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>노브랜드버거</title>
+    <title>Menu</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/nobrandburger_logo_3.png" type="image/x-icon">
     <link rel="icon" href="./images/nobrandburger_logo_3.png" type="image/x-icon">
@@ -21,48 +21,7 @@
     <link rel="stylesheet" href="./style/menu_responsive.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1><a href="./index.html"><img src="./images/nobrandburger_logo_1.png" alt="Nobrand Burger"></a></h1>
-            <a href="#" class="m_nav">
-                <span></span><span></span><span></span>
-            </a>
-        </div>
-        <div class="m_nav_open showHide">
-            <ul>
-                <li><a href="#">브랜드스토리</a></li>
-                <li><a href="./menu.html">메뉴</a></li>
-                <li><a href="#">매장</a></li>
-                <li><a href="#">뉴스&이벤트</a></li>
-                <li><a href="#">가맹안내</a></li>
-                <li><a href="#">고객지원</a></li>
-            </ul>
-        </div>
-        <ul>
-            <li><a href="#">브랜드스토리</a></li>
-            <li>
-                <a href="./menu.html">메뉴</a>
-                <ul class="menu">
-                    <li><a href="#">Burger</a></li>
-                    <li><a href="#">Set</a></li>
-                    <li><a href="#">Salad</a></li>
-                    <li><a href="#">Side</a></li>
-                    <li><a href="#">Beverage</a></li>
-                </ul>
-            </li>
-            <li><a href="#">매장</a></li>
-            <li>
-                <a href="#">뉴스&이벤트</a>
-                <ul class="news">
-                    <li><a href="#">New’s</a></li>
-                    <li><a href="#">Event</a></li>
-                </ul>
-            </li>
-            <li><a href="#">가맹안내</a></li>
-            <li><a href="#">고객지원</a></li>
-        </ul>
-        <button type="button" id="topBtn"></button>
-    </header>
+    <?php include('./header.php') ?>
     <main>
         <ul class="top_menu">
             <li><button type="button">Burger</button></li>
@@ -79,7 +38,7 @@
             <li><button type="button">Side</button></li>
             <li><button type="button">Beverage</button></li>
         </ul>
-        <section class="burger">
+        <section class="burger" id="burger">
             <div class="title">
                 <h2>Burger</h2>
                 <p>상기 메뉴는 매장에 따라 일부 상이할 수 있습니다.</p>
@@ -171,7 +130,7 @@
                 </li>
             </ul>
         </section>
-        <section class="set">
+        <section class="set" id="set">
             <div class="title">
                 <h2>Set</h2>
             </div>
@@ -206,7 +165,7 @@
                 </li>
             </ul>
         </section>
-        <section class="salad">
+        <section class="salad" id="salad">
             <div class="title">
                 <h2>Salad</h2>
             </div>
@@ -241,7 +200,7 @@
                 </li>
             </ul>
         </section>
-        <section class="side">
+        <section class="side" id="side">
             <div class="title">
                 <h2>Side</h2>
             </div>
@@ -311,7 +270,7 @@
                 </li>
             </ul>
         </section>
-        <section class="beverage">
+        <section class="beverage" id="beverage">
             <div class="title">
                 <h2>Beverage</h2>
             </div>
@@ -381,22 +340,19 @@
                 </li>
             </ul>
         </section>
-    </main>
-    <footer>
-        <div class="left">
-            <ul>
-                <li><a href="#">법적 고지</a></li>
-                <li><a href="#">개인정보처리방침</a></li>
-                <li><a href="#">고객지원</a></li>
-            </ul>
-            <address>
-                서울시 성동구 성수일로 56 백영성수센터 (주)신세계푸드TEL 02-3397-6000<br>
-                FAX 02-3397-6199 | 사업자등록번호 215-81-47377<br>
-                Copyright &copy; 2015 SHINSEGAE FOOD Inc. ALL RIGHTS RESERVED
-            </address>
+        <div class="click_all">
+            <div class="click">
+                <p class="img"><img src="./images/menu/burger_1.png" alt=""></p>
+                <h3>Pepperoni Pizza Chicken</h3>
+                <h2>페퍼로니피자 치킨</h2>
+                <p class="content">페퍼로니 토핑 번과 바삭한 치킨패티로피자, 치킨, 버거의 완벽한 밸런스를즐길 수 있는 버거</p>
+                <p class="logo"><img src="./images/nobrandburger_logo_1.png" alt=""></p>
+                <a href="#"><img src="./images/close.png" alt=""></a>
+            </div>
         </div>
-        <a href="./index.html"><img src="./images/nobrandburger_logo_1.png" alt=""></a>
-    </footer>
+    </main>
+    <div class="click_bg"></div>
+    <?php include('./footer.php') ?>
     <script src="./script/common.js"></script>
     <script src="./script/menu.js"></script>
 </body>
